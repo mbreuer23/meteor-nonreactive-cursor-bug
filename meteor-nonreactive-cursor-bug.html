@@ -1,0 +1,20 @@
+<head>
+  <title>meteor-nonreactive-cursor-bug</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+
+  {{> comments}}
+</body>
+
+<template name="comments">
+  <input type="text">
+  <button id="post">Post</button>
+  <button id="rerun">Re-run</button>
+  {{#each comments}}
+    <p>{{title}}, {{content}}</p>
+  {{/each}}
+
+
+</template>
